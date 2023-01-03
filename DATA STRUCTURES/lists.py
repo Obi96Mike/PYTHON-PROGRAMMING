@@ -1,5 +1,5 @@
-# Lists is a mutable data type that stores ordered sequence of objects [strings, numbers, booleans, lists]; called an array in other programming languages.
-
+list() # Lists is a mutable data type that stores ordered sequence of objects [strings, numbers, booleans, lists]; called an array in other programming languages.
+# lists often tend to be homogenous; they tend to hold values of the same data type; e.g., all strings or all floats
 # Lists of strings
 letters = ['a', 'b', 'c', 'd', 'e', ]
 
