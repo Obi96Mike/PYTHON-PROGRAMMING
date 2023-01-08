@@ -9,8 +9,8 @@ tuple() # fixed length immutable list.
 # Once a tuple is made, you cannot modify or mutate it. You cannot remove items, add items.
 
 empty = ()
-print(type(empty)) 
-
+# print(type(empty)) 
+# print(dir(empty)) # gives available methods to tuple object.
 # 1 element tuple
 x = (1, )
 print(x)
@@ -47,14 +47,23 @@ print(x[3][0]) # accessing 1st element in nested tuple
 x = (1, 2)
 y = (3, 4)
 combine = x + y
-print(combine)
+# print(combine)
 
 # Multiplying tuples/ lists
 combined = [1, 2] * 2
-print (combined)
+# print (combined)
 
+
+# Tuple containing mutable objects(lists) which can be modified
+addresses = (
+    ['Hudson Street', 'New York', 'NY']
+    ['Franklin Street', 'San Francisco', 'CA']
+)
+addresses[1][0] = "Polk Street"
+print(addresses)
 
 # Create a faves variable with a list of your 3 three favorite movies as strings. 
 # Use the tuple function to convert the list to a tuple and save the result in a movies variable.
 faves = ['Poo', 'Hoo', 'Koo']
 movies = tuple(faves)
+print(movies)
